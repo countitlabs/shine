@@ -50,7 +50,7 @@ module Shine
       if response.success?
         return true
       else
-        raise Device::ShineError.new(:subscribe, response)
+        raise Shine::ShineError.new(:subscribe, response)
       end
     end
 
@@ -70,7 +70,7 @@ module Shine
       if response.success?
         return true
       else
-        raise Device::ShineError.new(:subscribe, response)
+        raise Shine::ShineError.new(:subscribe, response)
       end
     end
 
@@ -85,7 +85,7 @@ module Shine
       if response.success?
         return response
       else
-        raise Device::ShineError.new(:profile, response)
+        raise Shine::ShineError.new(:profile, response)
       end
     end
 
@@ -103,7 +103,7 @@ module Shine
       if response.success?
         return response
       else
-        raise Device::ShineError.new(:profile, response)
+        raise Shine::ShineError.new(:profile, response)
       end
     end
 
@@ -129,7 +129,7 @@ module Shine
       if response.success?
         return response
       else
-        raise Device::ShineError.new(:profile, response)
+        raise Shine::ShineError.new(:profile, response)
       end
     end
 
